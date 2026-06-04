@@ -1,0 +1,250 @@
+  font-weight: 800;
+}
+
+.mini-stat strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.topbar {
+  grid-column: 2 / span 2;
+  min-height: 82px;
+  border-radius: 14px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.course-picker {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.course-dot {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: #102118;
+  font-weight: 950;
+  background: var(--course-gradient, linear-gradient(135deg, var(--green), var(--sun)));
+  box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.14);
+}
+
+.course-title {
+  min-width: 0;
+}
+
+.course-title h2 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+.course-title p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 38px;
+  padding: 0 11px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid rgba(23, 32, 42, 0.09);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.stat-pill small {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.main-board {
+  min-width: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.board-panel {
+  border-radius: 14px;
+  padding: 16px;
+  min-width: 0;
+}
+
+.right-rail {
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  min-width: 0;
+}
+
+.rail-section {
+  border: 1px solid rgba(23, 32, 42, 0.08);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 12px;
+  padding: 13px;
+}
+
+.rail-heading,
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.rail-heading h3,
+.panel-heading h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.rail-heading span,
+.panel-heading span {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.course-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(240px, 0.85fr);
+  gap: 16px;
+  align-items: stretch;
+}
+
+.course-summary {
+  border-radius: 14px;
+  padding: 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.66)),
+    var(--course-gradient, linear-gradient(135deg, rgba(72, 199, 116, 0.2), rgba(255, 202, 66, 0.2)));
+}
+
+.course-summary h2 {
+  margin: 0 0 8px;
+  font-size: 31px;
+  line-height: 1.02;
+}
+
+.course-summary p {
+  margin: 0;
+  color: #415066;
+  line-height: 1.45;
+}
+
+.summary-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.course-visual {
+  min-height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(23, 32, 42, 0.1);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.64), rgba(255, 255, 255, 0.22)),
+    var(--course-gradient, linear-gradient(135deg, var(--mint), #fff));
+  box-shadow: inset 0 -10px 0 rgba(23, 32, 42, 0.07);
+}
+
+.visual-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.visual-card {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 1px solid rgba(23, 32, 42, 0.11);
+  box-shadow: 0 15px 28px rgba(23, 32, 42, 0.13);
+  font-weight: 950;
+  font-size: 24px;
+}
+
+.visual-card.one {
+  top: 28px;
+  left: 26px;
+  rotate: -8deg;
+}
+
+.visual-card.two {
+  top: 92px;
+  right: 28px;
+  rotate: 9deg;
+}
+
+.visual-card.three {
+  left: 44%;
+  bottom: 30px;
+  rotate: -3deg;
+}
+
+.path-ribbon {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 72px;
+  height: 18px;
+  border-radius: 999px;
+  background: rgba(23, 32, 42, 0.14);
+  transform: skewY(-7deg);
+}
+
+.section-tabs {
+  display: flex;
+  gap: 9px;
+  overflow-x: auto;
+  padding: 4px 3px 10px;
+  scrollbar-width: thin;
+}
+
+.section-tab {
+  min-width: 156px;
+  justify-content: flex-start;
+}
+
+.section-tab.active {
+  background: #fff2bd;
+  box-shadow: 0 5px 0 var(--sun-deep), 0 12px 18px rgba(201, 143, 0, 0.14);
+}
+
+.unit-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
